@@ -13,15 +13,10 @@
 
 1. 在 Windows 本机 OCR 图片，或者准备一段文本。
 2. 检查文本内容，把它复制到 Windows 剪贴板。
-3. 在远程 Linux 终端里准备接收文件：
-
-```bash
-cat > pasted_code.txt
-```
-
+3. 在目标窗口里，把光标放到你想输入文本的位置。
 4. 双击 `Type To Remote.bat`。
-5. 选择速度，倒计时内切回远程终端。
-6. 等它打完后，手动按 `Ctrl+D` 保存文件。
+5. 选择速度，倒计时内切回目标窗口。
+6. 等它打完即可。
 
 输入过程中按住 `Esc` 可以停止。
 
@@ -59,7 +54,7 @@ powershell -NoProfile -STA -ExecutionPolicy Bypass -File .\type-to-remote.ps1 -F
 Author: GitHub [LouiShark](https://github.com/LouiShark)  
 Xiaohongshu: `Sassy_as_Tommo`
 
-Type local text into a remote terminal/editor one character at a time.
+Type local text into a remote window one character at a time.
 
 This is not clipboard paste or file transfer. It simulates keyboard input, so it can work with remote Linux servers, virtual machines, bastion hosts, remote desktops, or windows from other operating systems, as long as the target accepts keyboard input.
 
@@ -69,15 +64,10 @@ No server-side installation is required.
 
 1. OCR an image or prepare text on Windows.
 2. Check the text and copy it to the Windows clipboard.
-3. On the remote Linux terminal, prepare a receiving file:
-
-```bash
-cat > pasted_code.txt
-```
-
+3. Put the cursor exactly where you want the text to be typed.
 4. Double-click `Type To Remote.bat`.
-5. Choose a speed and focus the remote terminal before the countdown ends.
-6. When typing finishes, press `Ctrl+D` manually to save the file.
+5. Choose a speed and focus the target window before the countdown ends.
+6. Wait for typing to finish.
 
 Hold `Esc` during typing to stop.
 

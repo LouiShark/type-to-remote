@@ -1,3 +1,5 @@
+# Created by LouiShark (Xiaohongshu: Sassy_as_Tommo)
+
 param(
     [string]$File,
     [int]$DelayMs = 25,
